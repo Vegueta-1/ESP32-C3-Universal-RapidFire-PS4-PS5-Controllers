@@ -68,6 +68,7 @@ PS4 Wiring diagrams:
 <img width="4080" height="3060" alt="JDM-055 Install2" src="https://github.com/user-attachments/assets/ea5d5e5a-73b9-492a-9912-cbc2e35cb2b9" />
 
 PS5 Wiring diagrams:
+note for other boards starting from 30 to 50 versions you tap the R2 trigger from the easy remap flex.
 
 <img width="1785" height="1176" alt="ESP32-C3 Super Mini Original  Wiring Diagram BDM-010 And BDM-020" src="https://github.com/user-attachments/assets/0a4be449-8e09-41e1-9fb8-fdb13dff9a1f" />
 
