@@ -1,5 +1,6 @@
 # ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers 
 
+flash via web app here: https://vegueta-1.github.io/ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers/web_flasher.html
 
 Supports:
 
