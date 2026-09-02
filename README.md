@@ -38,7 +38,11 @@ The ESP32‑C3 microcontroller sits between the trigger board and the console, i
 Hardware & Connection
 
 ESP32-C3 Super Mini ✅ Works (cheaper, smaller)
+
+
 <img width="411" height="537" alt="esp32-c3-super-mini-pinout" src="https://github.com/user-attachments/assets/8b207134-174b-4caf-ba75-2d31c412f810" />
+
+
 GPIO Mapping (ESP32-C3 Super Mini)
 GPIO0- R2 Trigger sense (ADC + Output)
 GPIO1- Square button output
@@ -64,12 +68,14 @@ PS5 Wiring diagrams:
 
 <img width="1785" height="1176" alt="ESP32-C3 Super Mini Original  Wiring Diagram BDM-010 And BDM-020" src="https://github.com/user-attachments/assets/0a4be449-8e09-41e1-9fb8-fdb13dff9a1f" />
 
+
 Connecting to the Web UI
 Power on the ESP32 (it creates a WiFi AP)
 Connect your phone/PC to WiFi: RapidFireMod_v0.9.9
 Password: 12345678
 Open browser → http://192.168.4.1
 The themed dashboard loads
+
 <img width="1220" height="1425" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9 UI" src="https://github.com/user-attachments/assets/6e8f0618-e23b-48f6-bbe3-76ad730cb68f" />
 <img width="1167" height="582" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9_UI" src="https://github.com/user-attachments/assets/e6aa8f23-7d78-4946-894a-b2c59cc16738" />
 
