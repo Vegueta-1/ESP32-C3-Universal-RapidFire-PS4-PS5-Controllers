@@ -1,6 +1,7 @@
 {
-  "name": "ESP32-C3 Universal PS4 & PS5 RapidFire Mod v0.9.9",
+  "name": "ESP32-C3 Universal RapidFire PS4/PS5",
   "version": "0.9.9",
+  "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
