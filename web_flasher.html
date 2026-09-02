@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ESP32-C3 Universal RapidFire Web Flasher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ESP Web Tools -->
+  <script type="module" src="https://unpkg.com/esp-web-tools@9.0.0/dist/web/install-button.js"></script>
+  <style>
+    body {
+      background: #0b0c10;
+      color: #c5c6c7;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 640px;
+      width: 100%;
+      background: #1f2833;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 0 24px rgba(0,0,0,0.6);
+      border: 1px solid #45a29e33;
+    }
+    h1 {
+      margin-top: 0;
+      color: #66fcf1;
+      font-size: 1.6rem;
+    }
+    h2 {
+      margin-bottom: 0.5rem;
+      color: #c5c6c7;
+      font-size: 1.1rem;
+    }
+    p {
+      line-height: 1.5;
+      margin: 0.4rem 0;
+    }
+    code {
+      background: #0b0c10;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    ul {
+      margin: 0.4rem 0 0.8rem;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin: 0.2rem 0;
+    }
+    .warning {
+      color: #ffb347;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #7f8c8d;
+      text-align: center;
+    }
+    esp-web-install-button {
+      margin-top: 16px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>ESP32-C3 Universal PS4 &amp; PS5 RapidFire Mod v0.9.9</h1>
+
+    <h2>Web Flasher (ESP32-C3)</h2>
+    <p>
+      This page flashes the <strong>Universal RapidFire Mod v0.9.9</strong> firmware
+      to your <strong>ESP32-C3</strong> installed inside:
+    </p>
+    <ul>
+      <li>PS4 DualShock: JDM-001 / 011 / 020 / 030 / 040 / 050 / 055</li>
+      <li>PS5 DualSense: BDM-010 / 020 / 030 / 040 / 050</li>
+    </ul>
+
+    <p class="warning">
+      ⚠️ Use a USB cable that supports data (not just charging). Chrome / Edge required.
+    </p>
+
+
+    <esp-web-install-button
+      manifest="manifest.json">
+    </esp-web-install-button>
+
+    <p>
+      Click <strong>Connect</strong>, select your <strong>ESP32-C3</strong> COM port, then follow the prompts.
+    </p>
+
+    <h2>Connection tips</h2>
+    <ul>
+      <li>Hold the controller so the ESP32-C3 is powered via USB.</li>
+      <li>If flashing fails, press the <code>RST</code> button on the ESP32-C3 and try again.</li>
+      <li>Close other serial tools (Arduino IDE, PlatformIO, etc.) before flashing.</li>
+    </ul>
+
+    <div class="footer">
+      ESP32-C3 Universal RapidFire Mod &mdash; PS4 / PS5 Controllers<br />
+      GitHub: Vegueta-1 / ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers
+    </div>
+  </div>
+</body>
+</html>
