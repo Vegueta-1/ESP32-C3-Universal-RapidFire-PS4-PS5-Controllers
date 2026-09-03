@@ -9,6 +9,8 @@ Supports:
 PS4 Dual Shock: JDM‑001 / 011 / 020 / 030 / 040 / 050 / 055
 
 PS5 Dual Sense: BDM‑010 / 020 / 030 / 040 / 050
+
+
 How the Mod Detects & Works on ANY PS4/PS5 R2 Trigger
 The “Universal” compatibility comes from understanding what the R2 trigger actually is.
 
