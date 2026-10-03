@@ -1,5 +1,19 @@
 <img width="2112" height="480" alt="vegueta1 1280x300 pixels" src="https://github.com/user-attachments/assets/8723e096-4ea4-4511-8fd0-d55f2a77515d" />
+ESP32‑C3 Universal RapidFire & Remap — Update Log Version 0.9.11
 
+Web App Stability Fixes
+
+Improved stability of the onboard WebConfig interface used for mode switching, remap editing, and macro configuration.
+
+Hardened internal routing to prevent session drops during configuration changes.
+
+Hardened Jitter — Anti‑Cheat Pattern Defeat
+
+Added a new Jitter Hardening Layer to eliminate predictable timing signatures in rapid‑fire and Burst Mode.
+
+Injects controlled micro‑variability into pulse intervals to mimic human input patterns.
+
+Prevents anti‑cheat systems from detecting deterministic firing sequences.
 
 # ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers 
 
@@ -90,7 +104,8 @@ The themed dashboard loads
 <img width="1220" height="1425" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9 UI" src="https://github.com/user-attachments/assets/6e8f0618-e23b-48f6-bbe3-76ad730cb68f" />
 <img width="1167" height="582" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9_UI" src="https://github.com/user-attachments/assets/e6aa8f23-7d78-4946-894a-b2c59cc16738" />
 
-"For more details on how to use the mod and what each feature does, see the Rapid‑Fire Mod v0.9.9 — Complete User Guide PDF." attached on download link below.
+"For more details on how to use the mod and what each feature does, see the Rapid‑Fire Mod v0.9.11 — Complete User Guide PDF." attached on download link below.
+[RapidFire Mod v0.9.11— Complete User Guide.pdf](https://github.com/user-attachments/files/32991065/RapidFire.Mod.v0.9.11.Complete.User.Guide.pdf)
 
-[RapidFire Mod v0.9.9 — Complete User Guide.pdf](https://github.com/user-attachments/files/31749242/RapidFire.Mod.v0.9.9.Complete.User.Guide.pdf)
+
 
