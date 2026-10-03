@@ -95,7 +95,7 @@ note for other boards starting from 30 to 50 versions you tap the R2 trigger fro
 
 Connecting to the Web UI
 Power on the ESP32 (it creates a WiFi AP)
-Connect your phone/PC to WiFi: RapidFireMod_v0.9.9
+Connect your phone/PC to WiFi: RapidFireMod_v0.9.11
 Password: 12345678
 Open browser → http://192.168.4.1
 The themed dashboard loads
