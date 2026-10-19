@@ -167,11 +167,48 @@
           ⚠ Use a data‑capable USB cable. Chrome or Edge only. Page must be HTTPS.
         </div>
 
-        <esp-web-install-button manifest="manifest.json">
-          <button slot="activate" class="flash-btn">
-            <span class="icon">⭳</span>
-            <span>Connect & Install Firmware</span>
-          </button>
+        <h2>Select Your ESP32-C3 Board</h2>
+
+<div class="warning">
+⚠ Flashing the wrong firmware will result in incorrect GPIO mappings.
+Verify your board before continuing.
+</div>
+
+<div style="display:flex;flex-direction:column;gap:20px;">
+
+  <div style="padding:20px;border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+    <h3>ESP32-C3 Super Mini</h3>
+
+    <p>
+      Use this firmware if your mod is installed on an
+      <strong>ESP32-C3 Super Mini</strong>.
+    </p>
+
+    <esp-web-install-button manifest="manifest-supermini.json">
+      <button slot="activate" class="flash-btn">
+        <span class="icon">⭳</span>
+        <span>Flash Super Mini Firmware</span>
+      </button>
+    </esp-web-install-button>
+  </div>
+
+  <div style="padding:20px;border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+    <h3>Seeed Studio XIAO ESP32-C3</h3>
+
+    <p>
+      Use this firmware if your mod is installed on a
+      <strong>Seeed Studio XIAO ESP32-C3</strong>.
+    </p>
+
+    <esp-web-install-button manifest="manifest-xiao.json">
+      <button slot="activate" class="flash-btn">
+        <span class="icon">⭳</span>
+        <span>Flash XIAO C3 Firmware</span>
+      </button>
+    </esp-web-install-button>
+  </div>
+
+</div>
 
           <span slot="unsupported">
             Your browser does not support Web Serial. Use Chrome or Edge.
