@@ -1,4 +1,5 @@
-<img width="2112" height="480" alt="vegueta1 1280x300 pixels" src="https://github.com/user-attachments/assets/8723e096-4ea4-4511-8fd0-d55f2a77515d" />
+<img width="1360" height="752" alt="ESP32 C3 Universal Rapid-Fire Mod" src="https://github.com/user-attachments/assets/493850cd-62b9-41da-af2e-a2861af8c45c" />
+
 
 ESP32‑C3 Universal RapidFire & Remap — Update Log Version 0.9.11
 
