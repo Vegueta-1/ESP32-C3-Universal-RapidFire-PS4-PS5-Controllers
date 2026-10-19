@@ -1,19 +1,39 @@
 <img width="2112" height="480" alt="vegueta1 1280x300 pixels" src="https://github.com/user-attachments/assets/8723e096-4ea4-4511-8fd0-d55f2a77515d" />
+
 ESP32‑C3 Universal RapidFire & Remap — Update Log Version 0.9.11
 
-Web App Stability Fixes
+Web App Improvements
 
-Improved stability of the onboard WebConfig interface used for mode switching, remap editing, and macro configuration.
+-Improved stability of the onboard WebConfig interface used for mode switching, remap editing, and macro configuration.
 
-Hardened internal routing to prevent session drops during configuration changes.
+-Hardened internal routing to prevent session drops during configuration changes.
 
-Hardened Jitter — Anti‑Cheat Pattern Defeat
+-Added English / Spanish language toggle accessible from the ES/EN icon in the Web UI.
+ 
+-Language preference is automatically saved and restored using browser localStorage.
 
-Added a new Jitter Hardening Layer to eliminate predictable timing signatures in rapid‑fire and Burst Mode.
 
-Injects controlled micro‑variability into pulse intervals to mimic human input patterns.
+Sleep / Wake Reliability Fixes
 
-Prevents anti‑cheat systems from detecting deterministic firing sequences.
+-Fixed GPIO state handling during deep sleep and wake-up cycles.
+
+-Startup routine now releases any leftover GPIO holds before Wi-Fi AP initialization.
+
+-Button output pins are safely configured as INPUT_PULLUP during initialization to prevent unintended states.
+
+-Ensures native controller functionality remains fully operational while the ESP32-C3 is asleep.
+
+-Improves wake reliability and prevents button lockup conditions after sleep cycles.
+
+Stability & Reliability
+
+-Improved overall firmware robustness during WebConfig interaction and power state transitions.
+
+-Reduced risk of unexpected controller behavior caused by GPIO retention after wake-up.
+
+-Enhanced long-term operational stability for both PS4 DualShock and PS5 DualSense installations.
+
+-Added support for Seeed Studio Xiao ESP32-C3.
 
 # ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers 
 
