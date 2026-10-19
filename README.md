@@ -125,7 +125,8 @@ The themed dashboard loads
 <img width="1167" height="582" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9_UI" src="https://github.com/user-attachments/assets/e6aa8f23-7d78-4946-894a-b2c59cc16738" />
 
 "For more details on how to use the mod and what each feature does, see the Rapid‑Fire Mod v0.9.11 — Complete User Guide PDF." attached on download link below.
-[RapidFire Mod v0.9.11— Complete User Guide.pdf](https://github.com/user-attachments/files/32991065/RapidFire.Mod.v0.9.11.Complete.User.Guide.pdf)
+[RapidFire Mod v0.9.11— Complete User Guide.pdf](https://github.com/user-attachments/files/33657652/RapidFire.Mod.v0.9.11.Complete.User.Guide.pdf)
+
 
 
 
