@@ -124,6 +124,23 @@ This release focuses entirely on improving stability, reliability, and long-term
 
 Same features. Same feel. More reliable.
 
+v0.9.12-r4
+
+Hardware Validated
+
+Tested:
+- PS5 DualSense + ESP32-C3 Super Mini
+- PS4 DualShock 4 JDM-055 + ESP32-C3 XIAO
+
+Validation:
+- Extended sustained rapid-fire testing
+- Hundreds of thousands of trigger events
+- Web UI active
+- No kernel panic
+- No Guru Meditation
+- No watchdog reset
+- No hard crash
+- No WebSocket crash
 
 flash via web app here: https://vegueta-1.github.io/ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers/web_flasher.html
 
