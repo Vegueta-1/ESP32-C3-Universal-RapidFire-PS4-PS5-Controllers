@@ -7,7 +7,7 @@
       "chipFamily": "ESP32-C3",
       "parts": [
         {
-          "path": "Seeed Studio Xiao ESP32-C3-v0.9.11.bin",
+          "path": "Seeed Studio Xiao ESP32-C3-v0.9.12.bin",
           "offset": 0
         }
       ]
