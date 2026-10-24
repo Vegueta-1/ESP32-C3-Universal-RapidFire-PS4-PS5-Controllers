@@ -1,42 +1,129 @@
 <img width="1360" height="752" alt="ESP32 C3 Universal Rapid-Fire Mod" src="https://github.com/user-attachments/assets/493850cd-62b9-41da-af2e-a2861af8c45c" />
+ESP32-C3 Universal Rapid-Fire & Remap
+Version 0.9.12-r4
 
+Version 0.9.12-r4 is a maintenance and stability release focused on reliability, data integrity, and Web UI improvements. No gameplay behavior, rapid-fire timing, calibration results, or controller compatibility have been changed from v0.9.11.
 
-ESP32‑C3 Universal RapidFire & Remap — Update Log Version 0.9.11
+If you experienced crashes, unexpected reboots, Wi-Fi disconnects, or Web UI synchronization issues in v0.9.11, this is the recommended update.
 
-Web App Improvements
+Rapid-Fire Stability Improvements
 
--Improved stability of the onboard WebConfig interface used for mode switching, remap editing, and macro configuration.
+Rapid-fire operation is now more robust across all supported modes.
 
--Hardened internal routing to prevent session drops during configuration changes.
+Fixed Continuous Mode Stability
 
--Added English / Spanish language toggle accessible from the ES/EN icon in the Web UI.
- 
--Language preference is automatically saved and restored using browser localStorage.
+A compatibility issue introduced by newer ESP32 framework updates could cause rare crashes during extended Continuous Mode operation. This issue has been fully resolved.
 
+Safe Configuration Saving
 
-Sleep / Wake Reliability Fixes
+Configuration data and presets are now written safely even while the Web UI is actively modifying settings.
 
--Fixed GPIO state handling during deep sleep and wake-up cycles.
+Previously, simultaneous configuration updates and flash writes could occasionally result in:
 
--Startup routine now releases any leftover GPIO holds before Wi-Fi AP initialization.
+Wi-Fi disconnections
+Unexpected device reboots
+Configuration corruption under rare conditions
 
--Button output pins are safely configured as INPUT_PULLUP during initialization to prevent unintended states.
+These synchronization issues have been eliminated.
 
--Ensures native controller functionality remains fully operational while the ESP32-C3 is asleep.
+No Changes to Rapid-Fire Performance
 
--Improves wake reliability and prevents button lockup conditions after sleep cycles.
+All rapid-fire logic remains unchanged, including:
 
-Stability & Reliability
+Fire rate timing
+Pulse width behavior
+Burst-fire operation
+Jitter and humanization
+Existing presets
 
--Improved overall firmware robustness during WebConfig interaction and power state transitions.
+The mod performs exactly the same on real PS4 and PS5 hardware as it did in v0.9.11, with improved reliability behind the scenes.
 
--Reduced risk of unexpected controller behavior caused by GPIO retention after wake-up.
+Web UI Improvements
 
--Enhanced long-term operational stability for both PS4 DualShock and PS5 DualSense installations.
+Several user interface refinements have been implemented to improve responsiveness and prevent edge-case failures.
 
--Added support for Seeed Studio Xiao ESP32-C3.
+Automatic Recovery from "No Data" Conditions
 
-# ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers 
+The Web UI now gracefully handles temporary communication interruptions.
+
+Instead of becoming stuck on a "No Data" screen and requiring a page refresh, the interface will automatically pause updates and resume communication once the device is available again.
+
+More Accurate Calibration Feedback
+
+Calibration steps now display completion indicators only after data acquisition has fully completed.
+
+This prevents premature success indicators and ensures more reliable calibration results.
+
+Pulse Width Slider Protection
+
+The Pulse Width slider now enforces valid limits based on the currently selected fire rate.
+
+This prevents edge cases where invalid values could previously cause automatic resets to 1 ms.
+
+Improved Preset Name Handling
+
+Preset names containing quotes, special characters, or other problematic formatting are now automatically sanitized to prevent display or parsing issues.
+
+Language Support
+
+The English / Spanish language selector remains fully supported and continues to remember the user's preference between sessions.
+
+Export & Import Improvements
+
+The Save Config / Load Config system has been enhanced for better portability and backup reliability.
+
+Macro Button Mapping Preservation
+
+Macro button assignments are now included in export files and restored correctly during import.
+
+Previously, macro step button mappings could be lost when transferring profiles between devices. This issue has been fixed.
+
+Backward Compatibility Maintained
+
+Configuration files created with previous firmware versions remain fully supported.
+
+When importing an older configuration that does not contain macro mapping information:
+
+Existing macro mappings remain intact
+No settings are erased
+No data is corrupted or overwritten unexpectedly
+Planned for Future Release
+
+Macro timing information (delay and hold duration per step) is still stored locally on each device.
+
+Export and import support for macro timing data is planned for a future release while maintaining compatibility with existing backup files.
+
+What Has NOT Changed
+
+This release does not modify any user-facing gameplay behavior.
+
+The following remain identical to v0.9.11:
+
+Rapid-fire timing and responsiveness
+Burst-fire behavior
+Jitter and humanization algorithms
+Calibration process and results
+GPIO assignments
+Sleep and wake operation
+Web UI layout and controls
+Default preset values
+
+If it worked in v0.9.11, it will work exactly the same in v0.9.12-r4.
+
+Recommended Update
+
+v0.9.12-r4 is strongly recommended for all users, especially anyone who experienced:
+
+ESP32 crashes
+Random reboots
+Wi-Fi disconnects
+"No Data" Web UI freezes
+Configuration save issues
+
+This release focuses entirely on improving stability, reliability, and long-term operation while preserving the exact behavior users expect from previous versions.
+
+Same features. Same feel. More reliable.
+
 
 flash via web app here: https://vegueta-1.github.io/ESP32-C3-Universal-RapidFire-PS4-PS5-Controllers/web_flasher.html
 
@@ -149,7 +236,7 @@ note for other boards starting from 30 to 50 versions you tap the R2 trigger fro
 
 Connecting to the Web UI
 Power on the ESP32 (it creates a WiFi AP)
-Connect your phone/PC to WiFi: RapidFireMod_v0.9.11
+Connect your phone/PC to WiFi: RapidFireMod_v0.9.12
 Password: 12345678
 Open browser → http://192.168.4.1
 The themed dashboard loads
@@ -158,8 +245,8 @@ The themed dashboard loads
 <img width="1192" height="1434" alt="Screenshot 2026-10-19 032810" src="https://github.com/user-attachments/assets/ae171142-6f4d-47c6-9662-fb7f037a19f1" />
 <img width="1167" height="582" alt="ESP32-C3 Universal PS4 And PS5 Controller RapidFire Mod v0 9 9_UI" src="https://github.com/user-attachments/assets/e6aa8f23-7d78-4946-894a-b2c59cc16738" />
 
-"For more details on how to use the mod and what each feature does, see the Rapid‑Fire Mod v0.9.11 — Complete User Guide PDF." attached on download link below.
-[RapidFire Mod v0.9.11— Complete User Guide.pdf](https://github.com/user-attachments/files/33657652/RapidFire.Mod.v0.9.11.Complete.User.Guide.pdf)
+"For more details on how to use the mod and what each feature does, see the Rapid‑Fire Mod v0.9.12 — Complete User Guide PDF." attached on the page repostory.
+
 
 
 
