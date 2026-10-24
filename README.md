@@ -1,4 +1,5 @@
-<img width="1360" height="752" alt="ESP32 C3 Universal Rapid-Fire Mod" src="https://github.com/user-attachments/assets/493850cd-62b9-41da-af2e-a2861af8c45c" />
+<img width="1600" height="640" alt="ESP32 C3 Universal Rapid-Fire Mod" src="https://github.com/user-attachments/assets/b2eaae76-9be9-4cee-af7f-dd4cde3db464" />
+
 ESP32-C3 Universal Rapid-Fire & Remap
 Version 0.9.12-r4
 
